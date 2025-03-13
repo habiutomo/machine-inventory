@@ -4,6 +4,8 @@ import {
   Box,
   LogOut,
   Menu,
+  Tags,
+  Building2
 } from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 import { Link, useLocation } from "wouter";
@@ -14,6 +16,8 @@ import { useState } from "react";
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
   { name: "Machines", href: "/machines", icon: Box },
+  { name: "Types", href: "/types", icon: Tags },
+  { name: "Brands", href: "/brands", icon: Building2 },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -26,7 +30,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="flex items-center gap-2 px-3 h-16">
         <h1 className="font-semibold">Machine Inventory</h1>
       </div>
-      
+
       <nav className="flex flex-1 flex-col gap-1 p-3">
         {navigation.map((item) => {
           const Icon = item.icon;

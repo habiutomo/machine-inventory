@@ -8,6 +8,8 @@ import NotFound from "@/pages/not-found";
 import AuthPage from "@/pages/auth-page";
 import Dashboard from "@/pages/dashboard";
 import Machines from "@/pages/machines";
+import Types from "@/pages/types";
+import Brands from "@/pages/brands";
 import Layout from "@/components/layout";
 
 function Router() {
@@ -22,6 +24,16 @@ function Router() {
       <ProtectedRoute path="/machines" component={() => (
         <Layout>
           <Machines />
+        </Layout>
+      )} />
+      <ProtectedRoute path="/types" component={() => (
+        <Layout>
+          <Types />
+        </Layout>
+      )} />
+      <ProtectedRoute path="/brands" component={() => (
+        <Layout>
+          <Brands />
         </Layout>
       )} />
       <Route component={NotFound} />
