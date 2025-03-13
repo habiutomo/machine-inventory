@@ -7,6 +7,7 @@ import { ProtectedRoute } from "./lib/protected-route";
 import NotFound from "@/pages/not-found";
 import AuthPage from "@/pages/auth-page";
 import Dashboard from "@/pages/dashboard";
+import Machines from "@/pages/machines";
 import Layout from "@/components/layout";
 
 function Router() {
@@ -16,6 +17,11 @@ function Router() {
       <ProtectedRoute path="/" component={() => (
         <Layout>
           <Dashboard />
+        </Layout>
+      )} />
+      <ProtectedRoute path="/machines" component={() => (
+        <Layout>
+          <Machines />
         </Layout>
       )} />
       <Route component={NotFound} />
