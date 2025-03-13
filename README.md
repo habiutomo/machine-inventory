@@ -2,6 +2,8 @@
 
 A comprehensive web-based inventory management system for tracking machines with barcode support and role-based access control. Built with modern web technologies and designed for ease of use.
 
+![alt text](1.png)
+
 ## ✨ Key Features
 
 - **Role-Based Access Control**
